@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my Valentine? 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SECTION 1: QUIZ -->
+    <div id="quiz-section" class="section active">
+        <div class="card">
+            <div class="score">Score: <span id="score">0</span>/3</div>
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 2: VALENTINE PROPOSAL -->
+    <div id="valentine-section" class="section">
+        <div class="card valentine-card">
+            <img src="assets/hero.jpg" alt="Hero" class="hero-image">
+            <h1>Will you be my Valentine? 💗</h1>
+            <img id="reaction-gif" src="assets/normal.gif" alt="Reaction" class="reaction-gif">
+            <div class="buttons-container">
+                <button id="yes-btn" class="btn yes-btn">Yes</button>
+                <button id="no-btn" class="btn no-btn">No</button>
+            </div>
+            <p id="hint-text" class="hint-text">choose wisely... 😌</p>
+        </div>
+    </div>
+
+    <!-- SECTION 3: FLIP GALLERY -->
+    <div id="gallery-section" class="section">
+        <div class="container">
+            <h1 class="section-title">My lady's candid pics! 💗</h1>
+            <div class="gallery-grid">
+                <div class="flip-card" data-index="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/flip1.jpg" alt="Memory 1">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>You know, every time you smile, I just wanna grab my phone and take a pic so I can capture the exact moment and look at it every time I miss you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-index="1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/flip2.jpg" alt="Memory 2">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>When I'm with you, the time completely stops and speeds up at the same time. The moments I wanted to hold and stop the time for a second to be with you. To memorize your smile, the way you laugh, and the feel when I'm holding your hand. But it speeds up the same time as every hour is very short to learn you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-index="2">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/flip3.jpg" alt="Memory 3">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Loving you taught me that sometimes, people can be naive, bold, and loud. I thought before that it's always never been easy to love. There are sacrifices, change of priorities, and emotional baggage that comes. But with the right person, you... Those sacrifices seem to be worth it. Oh to love someone unconditionally! I'll always pray that you succeed in life, Vivien. Even if that requires me to admire you from afar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-index="3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/flip4.jpg" alt="Memory 4">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>If ever your life feels heavy, if things get too hard for you to handle, and you're left with nothing but darkness — I'll be here. I'll come running, whenever and whatever circumstance you're in. I'll gather all the light in me to brighten up your sky. Remember that I'll never leave you. I know I did it before, and it's been crushing me with every step I take when you're not beside me. I know my baby is strong but just letting you know there's someone who will help you carry things when life gets heavy. I love you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="gallery-continue-btn" class="btn continue-btn">Continue 💗</button>
+        </div>
+    </div>
+
+    <!-- SECTION 4: PLAYLIST WITH SONG -->
+    <div id="playlist-section" class="section">
+        <div class="card playlist-card">
+            <h1 class="section-title">A Song for You 💗</h1>
+            <img src="assets/invite.jpg" alt="Playlist" class="playlist-image">
+            <div class="song-info">
+                <p class="song-title">"Para Sakin"</p>
+                <p class="song-subtitle">(Official Audio)</p>
+            </div>
+            
+            <!-- Audio Player -->
+            <div class="audio-player">
+                <audio id="song-player" controls>
+                    <source src="assets/song.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <button id="open-invitation-btn" class="btn continue-btn">Open Invitation 💌</button>
+        </div>
+    </div>
+
+    <!-- SECTION 5: INVITATION -->
+    <div id="invitation-section" class="section">
+        <div class="gmail-container">
+            <div class="gmail-header">
+                <div class="gmail-subject">
+                    <h1>Valentine's Day Date 💗</h1>
+                </div>
+                <div class="gmail-from">
+                    <div class="sender-info">
+                        <img src="assets/pic.jpg" alt="Karl" class="sender-avatar-img">
+                        <div class="sender-details">
+                            <div class="sender-name">Karl</div>
+                            <div class="sender-email">to Vivien</div>
+                        </div>
+                    </div>
+                    <div class="gmail-date">Feb 14, 2026</div>
+                </div>
+            </div>
+            
+            <div class="gmail-body">
+                <p class="greeting">Hi Vivien! 💕</p>
+                
+                <p>I hope this message finds you well! I wanted to formally invite you to spend Valentine's Day with me. I've planned something special for us!</p>
+                
+                <div class="event-details">
+                    <h3>📅 Event Details</h3>
+                    <div class="detail-row">
+                        <span class="detail-label">Date:</span>
+                        <span class="detail-value">February 14, 2026</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Time:</span>
+                        <span class="detail-value">4:00 PM</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Main Event:</span>
+                        <span class="detail-value">Dinner date at Flossom Kitchen</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Location:</span>
+                        <span class="detail-value">SM North EDSA</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Attire:</span>
+                        <span class="detail-value">Anything you're comfortable with</span>
+                    </div>
+                </div>
+
+                <div class="agenda-section">
+                    <h3>📝 Added Agenda</h3>
+                    <ol class="agenda-list-gmail">
+                        <li>
+                            <span class="agenda-item">Space and Time Cube</span>
+                            <span class="agenda-location">📍 5F The Block, SM North EDSA</span>
+                        </li>
+                        <li>
+                            <span class="agenda-item">Splat Room</span>
+                            <span class="agenda-location">📍 3F The Block, SM North EDSA</span>
+                        </li>
+                        <li>
+                            <span class="agenda-item">Pluto Photo</span>
+                            <span class="agenda-location">📍 LG & 4F SM North EDSA</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="other-options-section">
+                    <h3>🍽️ Alternative Meal Options</h3>
+                    <p class="options-intro">If you'd prefer something else, we can also try:</p>
+                    <ul class="options-list-gmail">
+                        <li>
+                            <span class="agenda-item">Taste & Tell MNLA</span>
+                            <span class="agenda-location">📍 G/F The Block, SM North EDSA</span>
+                        </li>
+                        <li>
+                            <span class="agenda-item">Teppanya PH</span>
+                            <span class="agenda-location">📍 G/F North Towers, SM North EDSA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="closing">I'm really looking forward to spending this special day with you! 🥰</p>
+                
+                <p class="signature">With love,<br>Karl 💗</p>
+                
+                <button id="accept-btn" class="gmail-reply-btn">Accept Invitation 💕</button>
+                <p id="final-message" class="final-message" style="display: none;">Yay! See you at 4:00 PM 🥰</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
